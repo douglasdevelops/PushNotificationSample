@@ -74,7 +74,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
         let newToken = InstanceID.instanceID().token()
         ConnectToFCM()
     }
-
-
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        UIApplication.shared.applicationIconBadgeNumber += 1
+        
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "com.DouglasDevelops.BadgeNumberUpdated"), object: nil)
+    }
 }
 
