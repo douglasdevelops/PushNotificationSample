@@ -12,7 +12,7 @@
 		220866FD1F6223E1001796B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220866FB1F6223E1001796B3 /* Main.storyboard */; };
 		220866FF1F6223E1001796B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 220866FE1F6223E1001796B3 /* Assets.xcassets */; };
 		220867021F6223E1001796B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220867001F6223E1001796B3 /* LaunchScreen.storyboard */; };
-		2208670A1F622984001796B3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 220867091F622984001796B3 /* GoogleService-Info.plist */; };
+		2211AE621F6DE792000EC9B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2211AE611F6DE77D000EC9B8 /* GoogleService-Info.plist */; };
 		DFDBD03E23F0730A0E0AE9D6 /* Pods_PushNotificationSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E30C9A1D845D5D6490D9E2 /* Pods_PushNotificationSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,8 +24,8 @@
 		220866FE1F6223E1001796B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		220867011F6223E1001796B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		220867031F6223E1001796B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		220867091F622984001796B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2208670B1F622B8B001796B3 /* PushNotificationSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushNotificationSample.entitlements; sourceTree = "<group>"; };
+		2211AE611F6DE77D000EC9B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7A4C43190204FD7E771E3BF9 /* Pods-PushNotificationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushNotificationSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PushNotificationSample/Pods-PushNotificationSample.debug.xcconfig"; sourceTree = "<group>"; };
 		B7CABE4F99DD76B7DB55F91F /* Pods-PushNotificationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushNotificationSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-PushNotificationSample/Pods-PushNotificationSample.release.xcconfig"; sourceTree = "<group>"; };
 		D7E30C9A1D845D5D6490D9E2 /* Pods_PushNotificationSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushNotificationSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,7 +46,6 @@
 		220866EB1F6223E1001796B3 = {
 			isa = PBXGroup;
 			children = (
-				220867091F622984001796B3 /* GoogleService-Info.plist */,
 				220866F61F6223E1001796B3 /* PushNotificationSample */,
 				220866F51F6223E1001796B3 /* Products */,
 				BC0BD1A16320BCAEB5C518F0 /* Pods */,
@@ -65,6 +64,7 @@
 		220866F61F6223E1001796B3 /* PushNotificationSample */ = {
 			isa = PBXGroup;
 			children = (
+				2211AE611F6DE77D000EC9B8 /* GoogleService-Info.plist */,
 				2208670B1F622B8B001796B3 /* PushNotificationSample.entitlements */,
 				220866F71F6223E1001796B3 /* AppDelegate.swift */,
 				220866F91F6223E1001796B3 /* ViewController.swift */,
@@ -161,8 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				220867021F6223E1001796B3 /* LaunchScreen.storyboard in Resources */,
-				2208670A1F622984001796B3 /* GoogleService-Info.plist in Resources */,
 				220866FF1F6223E1001796B3 /* Assets.xcassets in Resources */,
+				2211AE621F6DE792000EC9B8 /* GoogleService-Info.plist in Resources */,
 				220866FD1F6223E1001796B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +365,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z6KXG7589J;
 				INFOPLIST_FILE = PushNotificationSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DouglasDevelops.RPNSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -382,6 +383,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z6KXG7589J;
 				INFOPLIST_FILE = PushNotificationSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DouglasDevelops.RPNSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
